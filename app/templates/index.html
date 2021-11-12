@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="jumbotron text-center">
+    <h3>Oğuzhan Demir' in Bloğuna Hoşgeldiniz</h3>
+    <p>Bu blogda flask freamwork ile web geliştirme öğrenmeye çalışıyorum.</p>
+</div>
+
+<ul>
+    {% for user in users %}
+    <li>{{user.username}}</li>
+    
+    {% endfor %}
+</ul>
+
+{% endblock %}
